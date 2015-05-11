@@ -2,9 +2,9 @@
 
 <form action="/tasks" method="post">
   <div class="form-group">
-    <label for='name'>Name:</label>
-    <input id="name" name="name" type="text">
-    <input id="task_type" name="task_type" type="hidden" value="<%= @list.id %>">
+    <label for='description'>Description:</label>
+    <input id="description" name="description" type="text">
+    <input id="list_id" name="list_id" type="hidden" value="<%= @list.id %>">
   </div>
 
   <button type="submit">Add Task</button>

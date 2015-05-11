@@ -31,14 +31,14 @@ describe('the index page path', {:type => :feature}) do
 
   it('shows user task_list') do
     visit('/lists/:id')
-    click_link('Task form')
+    click_link('Task')
     expect(page).to have_content('Add a task to the list:')
 
   end
 
   it('Allows the user input form task') do
     visit('/lists/:id/task/new')
-    fill_in('name', with: "do stuff")
+    fill_in('Name:', with: "do stuff")
     click_button('Add Task')
     expect(page).to have_content('Success')
   end

@@ -2,7 +2,7 @@
 
 <ul>
   <% @list.tasks.each() do |task| %>
-    <h3><%= task.name() %></h3>
+    <h3><%= task.description() %></h3>
   <% end %>
 </ul>
-<a href="/lists/<%= @list.id%>/task/new">Task form</a>
+<a href="/lists/<%= @list.id%>/task/new">Task</a>
